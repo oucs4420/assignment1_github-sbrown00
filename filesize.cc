@@ -16,7 +16,7 @@ int main( int argc, char* argv[] )
     for (int arg = 1; arg < argc; ++arg){ //for parsing the command line arguments 
         ifstream instream;
         string dataline;
-        int lineCount = 0;
+        int lineCount = -1;
         instream.open(argv[arg], std::ifstream::in);
         if (!(instream.fail())){
             while(!instream.eof()){
